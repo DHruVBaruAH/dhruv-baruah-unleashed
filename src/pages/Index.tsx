@@ -6,17 +6,30 @@ import Projects from "@/components/Projects";
 import Services from "@/components/Services";
 import Contact from "@/components/Contact";
 import Footer from "@/components/Footer";
+import ParticleBackground from "@/components/ParticleBackground";
+import AnimatedSection from "@/components/AnimatedSection";
 
 const Index = () => {
   return (
-    <div className="min-h-screen bg-background">
+    <div className="min-h-screen bg-background relative">
+      <ParticleBackground />
       <Navigation />
       <Hero />
-      <About />
-      <Experience />
-      <Projects />
-      <Services />
-      <Contact />
+      <AnimatedSection animationType="fadeInUp">
+        <About />
+      </AnimatedSection>
+      <AnimatedSection animationType="fadeInLeft">
+        <Experience />
+      </AnimatedSection>
+      <AnimatedSection animationType="fadeInRight">
+        <Projects />
+      </AnimatedSection>
+      <AnimatedSection animationType="scaleIn">
+        <Services />
+      </AnimatedSection>
+      <AnimatedSection animationType="fadeInUp">
+        <Contact />
+      </AnimatedSection>
       <Footer />
     </div>
   );
