@@ -1,6 +1,6 @@
 import { ReactNode, useRef, useEffect } from 'react';
 import { Button, ButtonProps } from '@/components/ui/button';
-const anime = require('animejs');
+import anime from 'animejs';
 import { cn } from '@/lib/utils';
 
 interface InteractiveButtonProps extends ButtonProps {

@@ -1,5 +1,5 @@
 import { useEffect, useRef, useCallback } from 'react';
-const anime = require('animejs');
+import anime from 'animejs';
 
 export interface AnimationPresets {
   fadeInUp: (targets: string | HTMLElement | HTMLElement[], delay?: number) => any;
@@ -120,12 +120,12 @@ export const useAnimeAnimations = () => {
         const chars = text.split('');
         
         const animation = anime({
-          targets: chars,
+          targets: { progress: 0 },
+          progress: 100,
           duration: 50,
-          delay: anime.stagger(50),
           easing: 'linear',
           update: function(anim) {
-            const progress = Math.round(anim.progress);
+            const progress = Math.round((anim.animatables[0].target as any).progress);
             const charsToShow = Math.ceil(chars.length * progress / 100);
             (element as HTMLElement).textContent = chars.slice(0, charsToShow).join('');
           },

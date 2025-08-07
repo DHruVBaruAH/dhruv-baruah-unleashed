@@ -1,5 +1,5 @@
 import { useEffect, useRef } from 'react';
-const anime = require('animejs');
+import anime from 'animejs';
 import { useAnimeAnimations, useMouseTracker } from '@/hooks/useAnimeAnimations';
 
 const AnimatedCircle = () => {

@@ -169,6 +169,53 @@
     transition: var(--transition-smooth);
   }
   
+  /* Additional utility classes */
+  .text-gradient-primary {
+    background: linear-gradient(45deg, hsl(var(--neon-green)), hsl(var(--neon-cyan)));
+    -webkit-background-clip: text;
+    background-clip: text;
+    -webkit-text-fill-color: transparent;
+  }
+  
+  .text-gradient-secondary {
+    background: linear-gradient(45deg, hsl(var(--neon-cyan)), hsl(var(--neon-red)));
+    -webkit-background-clip: text;
+    background-clip: text;
+    -webkit-text-fill-color: transparent;
+  }
+  
+  .bg-gradient-primary {
+    background: linear-gradient(45deg, hsl(var(--neon-green)), hsl(var(--neon-cyan)));
+  }
+  
+  .bg-gradient-secondary {
+    background: linear-gradient(45deg, hsl(var(--neon-cyan)), hsl(var(--neon-red)));
+  }
+  
+  .bg-gradient-card {
+    background: linear-gradient(180deg, hsl(var(--card)) 0%, hsl(var(--muted)) 100%);
+  }
+  
+  .bg-darker-surface {
+    background: hsl(var(--muted));
+  }
+  
+  .glow-primary {
+    box-shadow: 0 0 20px hsl(var(--neon-green) / 0.3);
+  }
+  
+  .glow-card {
+    box-shadow: 0 4px 20px hsl(var(--background) / 0.1);
+  }
+  
+  .hover-scale {
+    transition: transform 0.3s ease;
+  }
+  
+  .hover-scale:hover {
+    transform: scale(1.02);
+  }
+  
   /* Geometric shapes */
   .shape-circle {
     border-radius: 50%;

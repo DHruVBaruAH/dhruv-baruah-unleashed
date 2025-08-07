@@ -1,5 +1,4 @@
 import { useEffect, useRef } from 'react';
-const anime = require('animejs');
 
 interface Particle {
   x: number;

@@ -44,7 +44,7 @@ const Navigation = () => {
               <a
                 key={item.label}
                 href={item.href}
-                className="text-muted-foreground hover:text-primary transition-smooth hover:text-gradient-primary"
+                className="text-muted-foreground hover:text-primary transition-smooth"
               >
                 {item.label}
               </a>

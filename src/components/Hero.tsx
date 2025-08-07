@@ -28,7 +28,9 @@ const Hero = () => {
       if (mainTitleRef.current) {
         // Typewriter effect for main title
         const titleText = "All-in-one Software developer.";
-        presets.typewriter(mainTitleRef.current, titleText).play();
+        if (presets.typewriter) {
+          presets.typewriter(mainTitleRef.current, titleText).play();
+        }
       }
       if (descriptionRef.current) presets.fadeInUp(descriptionRef.current, 1000).play();
       if (buttonsRef.current) presets.fadeInUp(buttonsRef.current, 1200).play();
