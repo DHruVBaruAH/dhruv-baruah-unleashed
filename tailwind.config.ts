@@ -66,12 +66,13 @@ export default {
 					border: 'hsl(var(--sidebar-border))',
 					ring: 'hsl(var(--sidebar-ring))'
 				},
-				// Custom portfolio colors
-				'electric-blue': 'hsl(var(--electric-blue))',
-				'cyber-pink': 'hsl(var(--cyber-pink))',
+				// Anime.js style colors
 				'neon-green': 'hsl(var(--neon-green))',
-				'dark-surface': 'hsl(var(--dark-surface))',
-				'darker-surface': 'hsl(var(--darker-surface))',
+				'neon-red': 'hsl(var(--neon-red))',
+				'neon-yellow': 'hsl(var(--neon-yellow))',
+				'neon-cyan': 'hsl(var(--neon-cyan))',
+				'dark-bg': 'hsl(var(--dark-bg))',
+				'card-bg': 'hsl(var(--card-bg))',
 			},
 			borderRadius: {
 				lg: 'var(--radius)',
