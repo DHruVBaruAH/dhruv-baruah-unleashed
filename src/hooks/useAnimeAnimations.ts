@@ -1,5 +1,5 @@
 import { useEffect, useRef, useCallback } from 'react';
-import anime from 'animejs';
+import * as anime from 'animejs';
 
 export interface AnimationPresets {
   fadeInUp: (targets: string | HTMLElement | HTMLElement[], delay?: number) => any;
